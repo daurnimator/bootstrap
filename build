@@ -15,7 +15,7 @@ TARGET_OS_CMAKE=${TARGET_OS_LOWER^} # Example: Linux
 # First build the libraries for Zig to link against, as well as native `llvm-tblgen`.
 mkdir -p "$ROOTDIR/out/build-llvm-host"
 cd "$ROOTDIR/out/build-llvm-host"
-cmake "$ROOTDIR/llvm" \
+cmake "$ROOTDIR/llvm-project/llvm" \
   -DLLVM_ENABLE_PROJECTS="lld;clang" \
   -DLLVM_EXPERIMENTAL_TARGETS_TO_BUILD="AVR" \
   -DLLVM_ENABLE_LIBXML2=OFF \

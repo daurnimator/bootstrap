@@ -1,4 +1,2 @@
-llvm/* linguist-vendored
-lld/* linguist-vendored
-clang/* linguist-vendored
+llvm-project/* linguist-vendored
 zig/* linguist-vendored
